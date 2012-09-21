@@ -33,11 +33,16 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
+
 # gem 'debugger'
+
+
 gem "bootstrap-sass", "~> 2.1.0.0"
 
+group :development do
+  gem "therubyracer", :require => 'v8'
+end
 
-gem "therubyracer", :require => 'v8'
 
 
 
