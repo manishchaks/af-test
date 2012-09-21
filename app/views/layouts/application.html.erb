@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>AfTest</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>Artface.com Test</title>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navbar-inner">
+          <a class="brand" href="#">ARTFACE.COM</a>
+          <ul class="nav">
+            <li class="active"><a href="#">DASHBOARD</a></li>
+            <li><a href="#">SELL ART</a></li>
+            <li><a href="#">BUY ART</a></li>
+            <li><a href="#">FORUM</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                G.CAPUZZO
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">EDIT MY PROFILE</a></li>
+                <li><a href="#">PRIVACY SETTINGS</a></li>
+                <li><a href="#">INVOICE AND DOCUMENTS</a></li>
+                <li><a href="#">LOG OUT</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
 </html>
+
+
