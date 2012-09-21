@@ -1,16 +1,114 @@
-<div class="center hero-unit">
-  <h1>Welcome to the Sample App</h1>
+<div class="hero-unit">
+  <p class="lead">SELL: YOUR CURRENT OFFERS<p>
+  <ul class="thumbnails">
+    <li class="span4">
+      <div class="thumbnail">
+        <%= image_tag "pollock.key.jpg" , :class => "img-rounded" %>
+        <h5>Jackson Pollock</h5>
+        Remaining: 1 month, 4 days
+      </div>
+    </li>
+    <li class="span4">
+      <div class="thumbnail">
+        <%= image_tag "slave-ship.jpg" %>
+        <h5>William Turner</h5>
+        Remaining: 1 month, 4 days
+      </div>
+    </li>
+    <li class="span4">
+      <div class="thumbnail">
+        <%= image_tag "vincent-van-gogh-paintings-from-saint-remy-2.jpg", :class => "img-rounded" %>
+        <h5>Vincent Van Gough</h5>
+        Remaining: 2 days
+      </div>
+    </li>
+    <li class="span4">
+      <div class="thumbnail">
+        <%= image_tag "pollock.key.jpg" , :class => "img-rounded" %>
+        <h5>Jackson Pollock</h5>
+        Remaining: 1 month, 4 days
+      </div>
+    </li>
+    <li class="span4">
+      <div class="thumbnail">
+        <%= image_tag "mao.jpg" , :class => "img-rounded"%>
+        <h5>Andy Warhall</h5>
+        Remaining: 1 month, 4 days
+      </div>
+    </li>
+</ul>
+<button class="btn btn-success">ADD NEW OFFER</button>
+<button class="btn btn-danger">EDIT OFFER</button>
 
-  <h2>
-    This is the home page for the
-    <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
-
-  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary"
-  %>
 </div>
 
-<%= link_to image_tag("rails.png", alt: "Rails"),
-    'http://rubyonrails.org/' %>
+<div class="hero-unit">
+  <p class="lead">BUY: FAVORITES<p>
+  <ul class="thumbnails">
+    <li class="span4">
+      <div class="thumbnail">
+        <%= image_tag "pollock.key.jpg" , :class => "img-rounded" %>
+        <h5>Jackson Pollock</h5>
+        Remaining: 1 month, 4 days
+      </div>
+    </li>
+    <li class="span4">
+      <div class="thumbnail">
+        <%= image_tag "slave-ship.jpg" %>
+        <h5>William Turner</h5>
+        Remaining: 1 month, 4 days
+      </div>
+    </li>
+    <li class="span4">
+      <div class="thumbnail">
+        <%= image_tag "vincent-van-gogh-paintings-from-saint-remy-2.jpg", :class => "img-rounded" %>
+        <h5>Vincent Van Gough</h5>
+        Remaining: 2 days
+      </div>
+    </li>
+    <li class="span4">
+      <div class="thumbnail">
+        <%= image_tag "pollock.key.jpg" , :class => "img-rounded" %>
+        <h5>Jackson Pollock</h5>
+        Remaining: 1 month, 4 days
+      </div>
+    </li>
+    <li class="span4">
+      <div class="thumbnail">
+        <%= image_tag "mao.jpg" , :class => "img-rounded"%>
+        <h5>Andy Warhall</h5>
+        Remaining: 1 month, 4 days
+      </div>
+    </li>
+</ul>
+<button class="btn btn-success">GO TO FAVORITES</button>
+<button class="btn btn-danger">DELETE A FAVORITE</button>
 
+</div>
+<div class="hero-unit">
+  <h2> RECOMMEND ARTFACE.COM </h2>
+  <p> If you like our service why do you not recommend it to a friend or
+    a colleague? </p>
+  <form class="form-horizontal">
+    <div class="control-group">
+      <label class="control-label" for="inputEmail">RECEPIENT</label>
+      <div class="controls">
+        <input type="text" id="inputEmail" placeholder="Email">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputText">NAME</label>
+      <div class="controls">
+        <input type="text" id="inputText" placeholder="RECIPIENT'S NAME">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputText">YOUR MESSAGE</label>
+      <div class="controls">
+        <textarea rows="3"></textarea>
+      </div>
+    </div>
+    <button class="btn btn-primary">Send Recommendation</button>
+</div>
+</form>
+</div>
