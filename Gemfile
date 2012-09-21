@@ -34,4 +34,9 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 gem "bootstrap-sass", "~> 2.1.0.0"
-gem "therubyracer", :require => 'v8'
+
+group :development do
+  gem "therubyracer", :require => 'v8'
+end
+
+
