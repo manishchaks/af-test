@@ -1,4 +1,6 @@
 AfTest::Application.routes.draw do
+  get "static_pages/dashboard"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
